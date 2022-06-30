@@ -10,32 +10,28 @@ public class CalculatorServiceImpl implements CalculatorService {
         return "Добро пожаловать в калькулятор.";
     }
 
-    public String sumCalculator(double number1, double number2) {
+    public double sumCalculator(double number1, double number2) {
         double sum = 0;
         sum = number1 + number2;
-        return number1 + "+" + number2 + "=" + sum;
+        return sum;
     }
 
-    public String minusCalculator(double number1, double number2) {
+    public double minusCalculator(double number1, double number2) {
         double minus = 0;
         minus = number1 - number2;
-        return number1 + "-" + number2 + "=" + minus;
+        return minus;
     }
 
-    public String multiplyCalculator(double number1, double number2) {
+    public double multiplyCalculator(double number1, double number2) {
         double multiply = 0;
         multiply = number1 * number2;
-        return number1 + "*" + number2 + "=" + multiply;
+        return multiply;
     }
 
-    public String divideCalculator(double number1, double number2) {
+    public double divideCalculator(double number1, double number2) {
         double divide = 0;
-        if (number1 == 0 || number2 == 0) {
-            return "На 0 делить нельзя";
-        } else {
-            divide = number1 / number2;
-            return number1 + ":" + number2 + "=" + divide;
-        }
+        divide = number1 / number2;
+        return divide;
     }
 
 }

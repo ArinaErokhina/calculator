@@ -2,12 +2,11 @@ package com.calculator.calculator;
 
 public interface CalculatorService {
     String welcomeCalculator();
+    double sumCalculator(double number1, double number2);
 
-    public String sumCalculator(double number1, double number2);
+    double minusCalculator(double number1, double number2);
 
-    String minusCalculator(double number1, double number2);
+    double multiplyCalculator(double number1, double number2);
 
-    String multiplyCalculator(double number1, double number2);
-
-    String divideCalculator(double number1, double number2);
+    double divideCalculator(double number1, double number2);
 }
