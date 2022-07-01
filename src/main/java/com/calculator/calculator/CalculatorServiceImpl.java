@@ -10,28 +10,20 @@ public class CalculatorServiceImpl implements CalculatorService {
         return "Добро пожаловать в калькулятор.";
     }
 
-    public double sumCalculator(double number1, double number2) {
-        double sum = 0;
-        sum = number1 + number2;
-        return sum;
+    public double sumCalculator(Double number1, Double number2) {
+        return number1 + number2;
     }
 
-    public double minusCalculator(double number1, double number2) {
-        double minus = 0;
-        minus = number1 - number2;
-        return minus;
+    public double minusCalculator(Double number1, Double number2) {
+        return number1 - number2;
     }
 
-    public double multiplyCalculator(double number1, double number2) {
-        double multiply = 0;
-        multiply = number1 * number2;
-        return multiply;
+    public double multiplyCalculator(Double number1, Double number2) {
+        return number1 * number2;
     }
 
-    public double divideCalculator(double number1, double number2) {
-        double divide = 0;
-        divide = number1 / number2;
-        return divide;
+    public double divideCalculator(Double number1, Double number2) {
+        return number1 / number2;
     }
 
 }
