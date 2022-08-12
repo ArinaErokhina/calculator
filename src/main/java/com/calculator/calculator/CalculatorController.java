@@ -50,8 +50,6 @@ public class CalculatorController {
     public String divideCalculator(@RequestParam("num1") Double number1, @RequestParam("num2") Double number2) {
         if (number1 == null || number2 == null) {
             return "Введите число";
-        } else if (number1 == 0 || number2 == 0) {
-            return "На ноль делить нельзя";
         } else {
             return number1 + ":" + number2 + "=" + calculatorService.divideCalculator(number1, number2);
         }

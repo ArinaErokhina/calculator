@@ -23,6 +23,9 @@ public class CalculatorServiceImpl implements CalculatorService {
     }
 
     public double divideCalculator(Double number1, Double number2) {
+        if (number2 == 0) {
+            throw new CannotBeDividedByZeroException();
+        }
         return number1 / number2;
     }
 
